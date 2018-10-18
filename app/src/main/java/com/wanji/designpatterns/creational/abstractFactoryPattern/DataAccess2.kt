@@ -1,4 +1,4 @@
-package com.wanji.designpatterns.abstractFactoryPattern
+package com.wanji.designpatterns.creational.abstractFactoryPattern
 
 import android.util.Log
 

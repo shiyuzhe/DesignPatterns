@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DesignPatterns</string>
+    <string name="act_builder">Act Builder!</string>
 </resources>

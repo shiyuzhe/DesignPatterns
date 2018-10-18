@@ -1,4 +1,4 @@
-package com.wanji.designpatterns.simpleFactoryPattern
+package com.wanji.designpatterns.creational.simpleFactoryPattern
 
 /**
  *   by  :   syz

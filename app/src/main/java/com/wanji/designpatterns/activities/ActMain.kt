@@ -1,12 +1,17 @@
-package com.wanji.designpatterns
+package com.wanji.designpatterns.activities
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.wanji.designpatterns.abstractFactoryPattern.*
-import com.wanji.designpatterns.factoryMethodPattern.FactoryB
-import com.wanji.designpatterns.factoryMethodPattern.IFactory
-import com.wanji.designpatterns.simpleFactoryPattern.*
+import com.wanji.designpatterns.R
+import com.wanji.designpatterns.creational.abstractFactoryPattern.*
+import com.wanji.designpatterns.creational.simpleFactoryPattern.Product
+import com.wanji.designpatterns.creational.simpleFactoryPattern.ProductFac2
+import com.wanji.designpatterns.creational.simpleFactoryPattern.ProductFactory
+import com.wanji.designpatterns.creational.simpleFactoryPattern.exec
+import com.wanji.designpatterns.creational.factoryMethodPattern.FactoryB
+import com.wanji.designpatterns.creational.factoryMethodPattern.IFactory
 import kotlinx.android.synthetic.main.act_main.*
 
 class ActMain : AppCompatActivity() {
@@ -14,6 +19,7 @@ class ActMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.act_main)
+        actBuilder.setOnClickListener { startActivity(Intent(this, ActBuilder::class.java)) }
 
         abstractFactoryPattern()
 //        simpleFactoryPattern()
