@@ -22,8 +22,6 @@ class ActMain : AppCompatActivity() {
         actBuilder.setOnClickListener { startActivity(Intent(this, ActBuilder::class.java)) }
 
         abstractFactoryPattern()
-//        simpleFactoryPattern()
-//        factoryMethodPattern()
         abstractFactoryPattern2()
         abstractFactoryPattern3()
 
